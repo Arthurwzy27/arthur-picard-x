@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import './Navbar.scss';
+import './scss/Navbar.scss';
 
 
 const Navbar = () => {
@@ -10,21 +10,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="nav" id="navbar">
-      <div className="nav-content">
-        <ul className="nav-items" style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
-          <img
-            // src={logo}
-            className="nav-logo"
-            alt="Logo"
-            onClick={scrollToTop}
-          />
-          <li ><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link></li>
-          <li ><Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link></li>
-          <li><Link to="about" spy={true} smooth={true}>About</Link></li>
-          <li><Link to="contact" spy={true} smooth={true}>Contact</Link></li>
-        </ul>
-      </div>
+    <nav className="navbar-container">
+      {/* <ul className="nav-items" style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}> */}
+      <ul className="navbar-items">
+        <img src={''} className="nav-logo" alt="Logo" onClick={scrollToTop} />
+        <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}> // home</Link></li>
+        <li><Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>// projects</Link></li>
+        <li><Link to="about" spy={true} smooth={true}>// experience</Link></li>
+        <li><Link to="contact" spy={true} smooth={true}>// Contact</Link></li>
+      </ul>
     </nav>
   )
 }
