@@ -5,7 +5,10 @@
   height: 4rem;
   position: fixed;
   top: 0px;
+  font-family: monospace;
+  font-size: 18px;
   z-index: 1;
+  // transition: top 0.3s;
 
   .navbar-items {
     height: 100%;
