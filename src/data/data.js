@@ -20,3 +20,33 @@ export const allProjects = [
     alt: 'project img',
   },
 ]
+
+export const jobExperiences = [
+{
+  title: 'Junior Program Developer',
+  company: 'Daysk',
+  logo:require('../assets/daysk.jpeg'),
+  alt:'Daysk',
+  dateBeg: 'Feb 2022',
+  dateEnd: 'May 2022',
+  description: 'Define and build technical components/solutions for the project (using Javascript, React, Node.js and MongoDB). Maintain high quality of code, as well as solve appearing challenges with respect to the team guidelines and conventions. Improving the UI/UX experience (Figma). Creating reusable components (Storybook). Ensure high level of functional and technical compliance of the features with the help of unit/integration tests (Cypress). Code review, code refactoring and documentation.',
+},
+{
+  title: 'Space Planner',
+  company: 'CBRE @Google',
+  logo:require('../assets/google.png'),
+  alt:'Google',
+  dateBeg: '2019',
+  dateEnd: '2021',
+  description: 'Responsible for the growing of Zurich campuses : 15 buildings at over 1.5M square feet of premium office space. Coordinating and planning on opening new offices : floor drawings, move plans, teams allocation. Designing comprehensive reports, analyses, portfolio metrics and complex presentations for Google Site meetings, reporting to Google Facility Leads directly. Leading moves on daily basis as well as strategic space planning for upcoming months & all aligned with legal and safety regulations.',
+},
+{
+  title: 'Space Planning & Event Assistant',
+  company: 'Randstad @Google',
+  logo:require('../assets/google.png'),
+  alt:'Google',
+  dateBeg: '2018',
+  dateEnd: '2019',
+  description: 'Space Planning: Strategic organization of the diverse campuses - Coordinating and planning move. Monthly reporting - Seated Headcount, Event: Manage and support a diverse range of events, conferences and parties from booking, planning and setting up venue for events. ',
+},
+]
