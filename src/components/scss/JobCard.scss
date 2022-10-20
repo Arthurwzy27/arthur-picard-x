@@ -1,0 +1,182 @@
+//------ RESPONSIVE SCSS -------
+@media (max-width: 640px) {
+  .experiences-container {
+    .experience-header {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .job-card-accordion-container {
+      max-width: 90%;
+      margin: 2rem auto;
+
+      :active {
+        background-color: #5e45c6;
+      }
+    }
+
+    .accordion-title {
+      background-color: #430E79;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .accordion-title-right {
+      justify-self: end;
+    }
+
+    .accordion-title {
+      padding: 1rem;
+    }
+
+    .answer_wrapper {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .accordion-open {
+      padding: 1rem;
+      border: 1px solid rgba(101, 101, 101, 0.357);
+      height: auto;
+
+      .job-card-overview {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+
+        .job-card-overview-left {
+          width: 100%;
+          text-align: justify;
+
+          .job-card-stack {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 2rem;
+            gap: 15px;
+          }
+        }
+
+        .job-card-overview-right {
+          height: 3rem;
+          box-sizing: border-box;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 641px) {
+  .experiences-container {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+
+    // .experiences-background-wrapper {
+    //   filter: blur(12px);
+    // }
+
+
+    .experiences-wrapper-job {
+      // position: absolute;
+      width: 50vw;
+      // min-height: 60vh;
+      border: 1px solid white;
+      border-radius: 25px;
+      background:
+        linear-gradient(217deg, rgb(169 93 93 / 80%), rgb(127 22 22 / 0%) 70.71%),
+        linear-gradient(127deg, rgb(87 114 87 / 80%), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(15 15 205 / 80%), rgba(0, 0, 255, 0) 70.71%);
+
+      .experience-header {
+        margin: 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        white-space: pre;
+      }
+
+
+
+      // ----- PROJECTCARD SCSS -----
+
+      .job-card-accordion-container {
+        max-width: 90%;
+        margin: 2rem auto;
+
+        :active {
+          background-color: #5e45c6;
+        }
+      }
+
+      .accordion-title {
+        background-color: #430E79;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      .accordion-title-right {
+        justify-self: end ;
+      }
+
+      .accordion-title {
+        padding: 1rem;
+      }
+
+      .answer_wrapper {
+        height: 0;
+        overflow: hidden;
+      }
+
+      .accordion-open {
+        padding: 1rem;
+        border: 1px solid rgba(101, 101, 101, 0.357);
+        height: auto;
+
+        .job-card-overview {
+          margin-top:1rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          .job-card-overview-left {
+            text-align: justify;
+
+            .job-card-stack {
+              margin-top: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+            }
+          }
+
+        .job-card-overview-right {
+          height: 7rem;
+          margin-left: 1rem;
+        }
+      }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {}
+// ----- END RESPONSIVE -------
