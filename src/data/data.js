@@ -49,7 +49,7 @@ export const allProjects = [
     description: 'This app is a stylish ToDo list. Add your daily notes and filter them trhoughout the day. Keep track of your note in a simple unique app. When your task is done, just hide it, it´s simple as that!',
     src: require('../assets/todo-list.png'),
     alt: 'ToDo list',
-    stacks: [jsIcon, , cypressIcon, sassIcon, githubIcon],
+    stacks: [jsIcon, cypressIcon, sassIcon, githubIcon],
     website_url: '',
     github_url: 'https://github.com/arthurwzy27',
   },
@@ -83,7 +83,7 @@ export const allProjects = [
     description: 'This app is a stylish ToDo list. Add your daily notes and filter them trhoughout the day. Keep track of your note in a simple unique app. When your task is done, just hide it, it´s simple as that!',
     src: require('../assets/todo-list.png'),
     alt: 'ToDo list',
-    stacks: [jsIcon, , cypressIcon, sassIcon, githubIcon],
+    stacks: [jsIcon, cypressIcon, sassIcon, githubIcon],
     website_url: '',
     github_url: 'https://github.com/arthurwzy27',
   },
@@ -100,6 +100,18 @@ export const allProjects = [
 
 export const jobExperiences = [
 {
+  title: 'Web developer Freelancer',
+  company: '',
+  logo:require('../assets/movie-logo.png'),
+  alt:'freelancer',
+  location: 'Barcelona, Spain',
+  dateBeg: '2022',
+  dateEnd: 'Present',
+  description: ['Develop and maitain website with Javascript / React.js'],
+  stacks: [jsIcon, reactIcon, nodejsIcon, sassIcon],
+
+},
+{
   title: 'Junior Program Developer',
   company: 'Daysk',
   logo:require('../assets/daysk.jpeg'),
@@ -107,7 +119,13 @@ export const jobExperiences = [
   location: 'Barcelona, Spain',
   dateBeg: 'Feb 2022',
   dateEnd: 'May 2022',
-  description: 'Define and build technical components/solutions for the project (using Javascript, React, Node.js and MongoDB). Maintain high quality of code, as well as solve appearing challenges with respect to the team guidelines and conventions. Improving the UI/UX experience (Figma). Creating reusable components (Storybook). Ensure high level of functional and technical compliance of the features with the help of unit/integration tests (Cypress). Code review, code refactoring and documentation.',
+  description:[
+    'Define and build technical components/solutions for the project (using Javascript, React, Node.js and MongoDB).',
+    'Maintain high quality of code, as well as solve appearing challenges with respect to the team guidelines and conventions.',
+    'Improving the UI/UX experience (Figma).',
+    'Creating reusable components (Storybook).',
+    'Ensure high level of functional and technical compliance of the features with the help of unit/integration tests (Cypress).',
+    'Code review, code refactoring and documentation.'],
   stacks: [jsIcon, reactIcon, nodejsIcon, sassIcon, cypressIcon, meteorIcon]
 },
 {
@@ -118,7 +136,7 @@ export const jobExperiences = [
   location: 'Zurich, Switzerland',
   dateBeg: '2019',
   dateEnd: '2021',
-  description: 'Responsible for the growing of Zurich campuses : 15 buildings at over 1.5M square feet of premium office space. Coordinating and planning on opening new offices : floor drawings, move plans, teams allocation. Designing comprehensive reports, analyses, portfolio metrics and complex presentations for Google Site meetings, reporting to Google Facility Leads directly. Leading moves on daily basis as well as strategic space planning for upcoming months & all aligned with legal and safety regulations.',
+  description: ['Responsible for the growing of Zurich campuses : 15 buildings at over 1.5M square feet of premium office space. Coordinating and planning on opening new offices : floor drawings, move plans, teams allocation. Designing comprehensive reports, analyses, portfolio metrics and complex presentations for Google Site meetings, reporting to Google Facility Leads directly. Leading moves on daily basis as well as strategic space planning for upcoming months & all aligned with legal and safety regulations.',],
 },
 {
   title: 'Space Planning & Event Assistant',
@@ -128,15 +146,15 @@ export const jobExperiences = [
   location: 'Zurich, Switzerland',
   dateBeg: '2018',
   dateEnd: '2019',
-  description: 'Space Planning: Strategic organization of the diverse campuses - Coordinating and planning move. Monthly reporting - Seated Headcount, Event: Manage and support a diverse range of events, conferences and parties from booking, planning and setting up venue for events. ',
+  description: ['Space Planning: Strategic organization of the diverse campuses - Coordinating and planning move. Monthly reporting - Seated Headcount, Event: Manage and support a diverse range of events, conferences and parties from booking, planning and setting up venue for events. ',],
 },
 ]
 
-export const BackgroundExperiences = [
+export const backgroundExperiences = [
 {
-  title: 'Full stack web developer at Le wagon, barcelona',
+  title: 'Fullstack Web developer program',
   company: 'Le Wagon',
-  logo:require('../assets/daysk.jpeg'),
+  logo:require('../assets/lewagon-logo.png'),
   alt:'lewagon-logo',
   location: 'Barcelona, Spain',
   dateBeg: '2022',
@@ -148,7 +166,7 @@ export const BackgroundExperiences = [
 {
   title: 'Bachelor in International Business management and finance',
   company: 'ESAM School of Advanced Management and Finance',
-  logo:require('../assets/google.png'),
+  logo:require('../assets/esam-logo.png'),
   alt:'esam-logo',
   location: 'Lyon, France',
   dateBeg: '2013',
@@ -158,7 +176,7 @@ export const BackgroundExperiences = [
 {
   title: 'University Exchange Bachelor of Business Administration',
   company: 'American College Dublin',
-  logo:require('../assets/google.png'),
+  logo:require('../assets/acd-logo.png'),
   alt:'acd-logo',
   location: 'Dublin, Ireland',
   dateBeg: '2014',
