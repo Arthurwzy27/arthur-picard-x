@@ -1,16 +1,30 @@
 import { FaGithub, FaReact, FaSass, FaNode } from "react-icons/fa";
-import { DiRuby, DiRor } from "react-icons/di";
-import { SiJavascript, SiCypress, SiStorybook, SiHtml5, SiMeteor } from "react-icons/si";
+import { DiRuby, DiRor, DiResponsive } from "react-icons/di";
+import {
+  SiJavascript,
+  SiCypress,
+  SiStorybook,
+  SiHtml5,
+  SiMeteor,
+  SiFigma,
+  SiCss3,
+  SiMongodb,
+  SiHeroku,
+  SiBootstrap,
+  SiTailwindcss,
+  SiFirebase,
+  SiAmazonaws,
+
+
+} from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 
 
 const reactIcon = <FaReact />
 const sassIcon = <FaSass />
 const githubIcon = <FaGithub />
-
 const rubyIcon = <DiRuby />
 const rorIcon = <DiRor />
-
 const jsIcon = <SiJavascript />
 const cypressIcon = <SiCypress />
 const storybookIcon = <SiStorybook />
@@ -18,13 +32,42 @@ const htlmIcon = <SiHtml5 />
 const linkedinIcon = <SlSocialLinkedin />
 const nodejsIcon = <FaNode />
 const meteorIcon = <SiMeteor />
-// const githubIcon = < />
+const figmaIcon = <SiFigma />
+const cssIcon = <SiCss3 />
+const mongodbIcon = <SiMongodb />
+const herokuIcon = <SiHeroku />
+const bootstrapIcon = <SiBootstrap />
+const tailwindIcon = <SiTailwindcss />
+const firebaseIcon = <SiFirebase />
+const amazonIcon = <SiAmazonaws />
 
 
 export const navbarLink = [
   { id: 'projects', name: '// projects' },
   { id: 'experiences', name: '// experiences' },
   { id: 'footer', name: '// contact' },
+]
+
+export const skills = [
+  { name: 'React', icon: reactIcon, category: 'front' },
+  { name: 'Ruby', icon: rubyIcon, category: 'front'},
+  { name: 'Sass', icon: sassIcon, category: 'front'},
+  { name: 'HTML', icon: htlmIcon, category: 'front'},
+  { name: 'CSS', icon: cssIcon, category: 'front'},
+  { name: 'Bootstrap', icon: bootstrapIcon, category: 'front'},
+  { name: 'Tailwing', icon: tailwindIcon, category: 'front'},
+  { name: 'Javascript', icon: jsIcon, category: 'back'},
+  { name: 'Node.js', icon: nodejsIcon, category: 'back'},
+  { name: 'Ruby on Rails', icon: rorIcon, category: 'back'},
+  { name: 'MongoDB', icon: mongodbIcon, category: 'back'},
+  { name: 'StoryBook', icon: storybookIcon, category: 'back'},
+  { name: 'Meteor', icon: meteorIcon, category: 'back'},
+  { name: 'Cypress', icon: cypressIcon, category: 'back'},
+  { name: 'Github', icon: githubIcon, category: 'tool'},
+  { name: 'Figma', icon: figmaIcon, category: 'tool'},
+  { name: 'Heroku', icon: herokuIcon, category: 'tool'},
+  { name: 'Firebase', icon: firebaseIcon, category: 'tool'},
+  { name: 'AWS', icon: amazonIcon, category: 'tool'},
 ]
 
 export const allProjects = [
@@ -136,7 +179,11 @@ export const jobExperiences = [
   location: 'Zurich, Switzerland',
   dateBeg: '2019',
   dateEnd: '2021',
-  description: ['Responsible for the growing of Zurich campuses : 15 buildings at over 1.5M square feet of premium office space. Coordinating and planning on opening new offices : floor drawings, move plans, teams allocation. Designing comprehensive reports, analyses, portfolio metrics and complex presentations for Google Site meetings, reporting to Google Facility Leads directly. Leading moves on daily basis as well as strategic space planning for upcoming months & all aligned with legal and safety regulations.',],
+  description: [
+    'Responsible for the growing of Zurich campuses : 15 buildings at over 1.5M square feet of premium office space.',
+    'Coordinating and planning on opening new offices : floor drawings, move plans, teams allocation.',
+    'Designing comprehensive reports, analyses, portfolio metrics and complex presentations for Google Site meetings, reporting to Google Facility Leads directly.',
+    'Leading moves on daily basis as well as strategic space planning for upcoming months & all aligned with legal and safety regulations.'],
 },
 {
   title: 'Space Planning & Event Assistant',
@@ -146,7 +193,15 @@ export const jobExperiences = [
   location: 'Zurich, Switzerland',
   dateBeg: '2018',
   dateEnd: '2019',
-  description: ['Space Planning: Strategic organization of the diverse campuses - Coordinating and planning move. Monthly reporting - Seated Headcount, Event: Manage and support a diverse range of events, conferences and parties from booking, planning and setting up venue for events. ',],
+  description: [
+    'Space Planning:',
+    ' Strategic organization of the diverse campuses',
+    ' Coordinating and planning move. Monthly reporting',
+    ' Monthly Seated Headcount Report',
+    'Event:',
+    ' Manage and support a diverse range of events',
+    ' Conferences and parties from booking',
+    ' Planning and setting up venue for events'],
 },
 ]
 
@@ -159,7 +214,20 @@ export const backgroundExperiences = [
   location: 'Barcelona, Spain',
   dateBeg: '2022',
   dateEnd: '2022',
-  description: '9-week full-time intensive coding bootcamp learning : Ruby & Ruby on Rails, Software architecture (HTML5, CSS, JavaScript ES6, Bootstrap), Relational Database, SQL (PostgreSQL, MySQL, Redis) & ORM (Active Record), Algorithms & data structures, Git & GitHub, Web interfaces, Prototyping on Figma, UX & UI, Heroku, DOM, Events & AJAX, Parse & store data in standard files (JSON,CSV, XML), Web scraping',
+  description: [
+    '9-week full-time intensive coding bootcamp:',
+    'Ruby & Ruby on Rails',
+    'Object Oriented Program',
+    'Software architecture (HTML5, CSS, JavaScript ES6, Bootstrap)',
+    'Relational Database, SQL (PostgreSQL, MySQL, Redis) & ORM (Active Record)',
+    'Algorithms & data structures',
+    'Git & GitHub',
+    'Web interfaces',
+    'Prototyping on Figma UX & UI',
+    'Host WebApp and database on Heroku',
+    'ObjectEvents & AJAX',
+    'Parse & store data in standard files (JSON,CSV, XML)',
+    'Web scraping'],
   stacks: [jsIcon, reactIcon, nodejsIcon, sassIcon, cypressIcon, meteorIcon],
 
 },
@@ -171,7 +239,7 @@ export const backgroundExperiences = [
   location: 'Lyon, France',
   dateBeg: '2013',
   dateEnd: '2016',
-  description: '',
+  description: [''],
 },
 {
   title: 'University Exchange Bachelor of Business Administration',
@@ -181,16 +249,16 @@ export const backgroundExperiences = [
   location: 'Dublin, Ireland',
   dateBeg: '2014',
   dateEnd: '2014',
-  description: '',
+  description: [''],
 },
 {
-  title: 'Ba',
+  title: 'Bachelor in Business Administration',
   company: 'LFIGP Lycée Français International Georges Pompidou',
   logo:require('../assets/google.png'),
   alt:'lfigp-logo',
   location: 'Dublin, Ireland',
   dateBeg: '2004',
   dateEnd: '2012',
-  description: '',
+  description: [''],
 },
 ]

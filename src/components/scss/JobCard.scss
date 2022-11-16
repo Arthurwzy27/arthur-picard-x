@@ -78,39 +78,8 @@
 
 
 @media (min-width: 641px) {
-  .experiences-container {
-    width: 100vw;
-    height: 80vh;
-    margin-top: 2rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+  
 
-
-    // .experiences-background-wrapper {
-    //   filter: blur(12px);
-    // }
-
-
-    .experiences-wrapper-job {
-      // position: absolute;
-      width: 50vw;
-      // min-height: 60vh;
-      border: 1px solid white;
-      border-radius: 25px;
-      background:
-        linear-gradient(217deg, rgb(169 93 93 / 80%), rgb(127 22 22 / 0%) 70.71%),
-        linear-gradient(127deg, rgb(87 114 87 / 80%), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgb(15 15 205 / 80%), rgba(0, 0, 255, 0) 70.71%);
-
-      .experience-header {
-        margin: 4rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 4rem;
-        white-space: pre;
-      }
 
 
 
@@ -174,9 +143,10 @@
         }
       }
       }
-    }
-  }
+
+
 }
+
 
 @media (min-width: 1280px) {}
 // ----- END RESPONSIVE -------

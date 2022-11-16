@@ -1,8 +1,63 @@
-.projects-container {
-  margin-top: 2rem;
-  padding: 0 7rem;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
-  // height: 50rem;
+@media (max-width: 640px) {
+
+}
+
+// @media (min-width: 768px) {}
+
+// @media (min-width: 1024px) {}
+
+// @media (min-width: 1280px) {}
+
+
+
+// -------- PROJECTS ----------
+
+
+
+
+// ------- EXPERIENCES ---------
+
+
+
+// ------- CONTACT ---------
+
+.contact-container {
+  min-height: 20vh;
+}
+
+
+
+
+// ------- FOOTER ---------
+
+.footer-container {
+  height: 30vh;
+  margin: 10rem;
+
+  .footer-title {
+    font-size: 88px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    }
+
+    .footer-contact-icons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-clip:content-box;
+    filter: invert(43%) sepia(48%) saturate(205%) hue-rotate(227deg) brightness(133%) contrast(121%);
+
+    :hover {
+      // color: transparent;
+      // background: linear-gradient(to right, crimson, pink, springgreen);
+      // background-size: 120% 200%;
+      // animation: rainbow 2s ease-in-out infinite;
+      // color:
+      //     linear-gradient(217deg, rgb(169 93 93 / 80%), rgb(127 22 22 / 0%) 70.71%),
+      //     linear-gradient(127deg, rgb(87 114 87 / 80%), rgba(0, 255, 0, 0) 70.71%),
+      //     linear-gradient(336deg, rgb(15 15 205 / 80%), rgba(0, 0, 255, 0) 70.71%);
+    }
+  }
 }

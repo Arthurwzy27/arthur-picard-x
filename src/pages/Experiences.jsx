@@ -1,34 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import JobCard from '../components/JobCard';
 import { jobExperiences, backgroundExperiences } from '../data/data';
 import BackgroundCard from '../components/BackgroundCard';
-import { useToggleBtn } from '../actions/actions';
+import { useToggleBtn, useToggleExp } from '../actions/actions';
 
 import '../components/scss/Experiences.scss';
 
 
 const About = () => {
+  const { activeTab, handleProfessionalExp, handleBackgroundExp } = useToggleExp()
   const { isShowing, handleToggle } = useToggleBtn()
-  const [activeTab, setActiveTab] = useState("professional");
-
-  const handleProfessionalExp = () => {
-    setActiveTab("professional");
-  };
-  const handleBackgroundExp = () => {
-    setActiveTab("background");
-  };
-
 
   return (
     <div id='experiences' className='experiences-container'>
       <div>
-        <ul className="experiences-switch-btn">
-          <li className={activeTab === "professional" ? "active" : ""} onClick={handleProfessionalExp} >Professional Experiences</li>
-          <li className={activeTab === "background" ? "active" : ""} onClick={handleBackgroundExp} >Background Experiences</li>
+        <ul className='experiences-switch-btn' >
+          <li className={activeTab === 'professional' ? 'active-experience-tab' : ''} onClick={handleProfessionalExp}>Professional Experiences</li>
+          <li className={activeTab === 'background' ? 'active-experience-tab' : ''} onClick={handleBackgroundExp}>Background Experiences</li>
         </ul>
-        <div className="outlet">
-        {activeTab === "professional" ?
-          <div className="experiences-wrapper-job">
+
+        <div className='outlet'>
+        {activeTab === 'professional' ?
+          <div className='experiences-wrapper-job'>
             {jobExperiences.map((job, id) =>
               <div key={id}>
                 <JobCard
@@ -42,26 +35,23 @@ const About = () => {
                   dateBeg={job.dateBeg}
                   dateEnd={job.dateEnd}
                   description={job.description}
-                  stacks={job.stacks?.map((stack, id) =>
-                    <span key={id} style={{margin: '1rem'}}>{stack}</span>
-                  )}
+                  stacks={job.stacks}
                 />
               </div>
             )}
           </div>
-          : <div className="experiences-wrapper-background">
-            <span className='experience-header' >Background Experience</span>
+          :
+          <div className='experiences-wrapper-background'>
             {backgroundExperiences.map((exp, id) =>
-              <div key={id} className="projects-background-card">
+              <div key={id}>
                 <BackgroundCard
                   title={exp.title}
                   location={exp.location}
                   description={exp.description}
+                  date={exp.dateEnd}
                   src={exp.logo}
                   alt={exp.alt}
-                  stacks={exp.stacks?.map((stack, id) =>
-                    <span key={id} style={{margin: '1rem'}}>{stack}</span>
-                  )}
+                  stacks={exp.stacks}
                 />
               </div>
             )}

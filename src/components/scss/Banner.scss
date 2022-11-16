@@ -83,10 +83,13 @@
 
     .banner-title {
       font-size: 88px;
-      padding: 2rem 0;
+      // padding: 2rem 0;
+      display: flex;
+        justify-content: flex-start;
+        padding-left: 20rem;
 
       .banner-fix-title {
-        display: block;
+        padding-right: 1rem;
       }
     }
 

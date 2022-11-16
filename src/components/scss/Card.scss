@@ -1,0 +1,30 @@
+.project-card{
+  border: 1px solid rgba(60, 60, 60, 0.628);
+  margin: 2rem;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  border-radius: 20px;
+
+
+  .project-banner{
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .project-icon-link {
+    cursor: pointer;
+
+    .project-icon {
+      width: 25%;
+    }
+  }
+
+  .project-icons{
+    display: flex;
+    align-items: center;
+    height: 30%;
+  }
+}

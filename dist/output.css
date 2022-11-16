@@ -27,6 +27,6 @@ button {
   cursor: pointer;
 }
 
-  a, :visited, :link, :hover, :active {
-    color: inherit;
-  }
+a, :visited, :link, :hover, :active {
+  color: inherit;
+}

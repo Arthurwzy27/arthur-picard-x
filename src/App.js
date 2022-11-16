@@ -1,9 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import NavbarHamb from './components/NavbarHamb';
 import Banner from './components/Banner';
-import About from './pages/About';
+import Skills from './components/Skills';
+import Experiences from './pages/Experiences';
 import Projects from './pages/Projects';
+import Footer from './components/Footer';
 
 import './App.scss';
 
@@ -12,14 +15,18 @@ function App() {
     <>
       {/* <Router> */}
         <div className="App">
-          <Navbar />
+          {/* <Navbar /> */}
+          <NavbarHamb />
           <Banner />
-          <Projects  />
-          <About />
+          <Skills />
+
+          <Projects />
+          <Experiences />
+          <Footer />
           {/* <Routes> */}
             {/* <Route path='/' element={<Banner />} /> */}
             {/* <Route path='/projects' element={<Projects />} />
-            <Route path='/about' element={<About />} />
+            <Route path='/Experiences' element={<About />} />
             <Route path='*' element={<ErrorPage />} /> */}
           {/* </Routes> */}
           {/* <Footer /> */}

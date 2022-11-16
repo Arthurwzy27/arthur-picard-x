@@ -14,14 +14,14 @@ const ProjectCard = ({src, alt, title, description, stacks, website_url, github_
           <h1 className='project-card-right-title'>{title}</h1>
           <span className='project-card-right-description'>{description}</span>
           <div className="project-card-right-description-link">
-            <a href={website_url} target='_blank' rel='noreferrer'>View Website</a>
-            <a href={github_url} target='_blank' rel='noreferrer'>View on Github</a>
+            <a className='project-website-link' href={website_url} target='_blank' rel='noreferrer'>View Website</a>
+            <a className='project-github-link' href={github_url} target='_blank' rel='noreferrer'>View on Github</a>
           </div>
-          <IconContext.Provider value={{ className: 'react-icons', size: 42, gap: 50 }}>
             <div className="stack-icons">
-              <span>{stacks}</span>
+              <IconContext.Provider value={{ className: 'stack-icon-img' }}>
+                <span>{stacks}</span>
+              </IconContext.Provider>
             </div>
-          </IconContext.Provider>
         </div>
       </div>
     </div>

@@ -1,0 +1,179 @@
+//------ RESPONSIVE SCSS -------
+@media (max-width: 640px) {
+  .experiences-container {
+    .experience-header {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .job-card-accordion-container {
+      max-width: 90%;
+      margin: 2rem auto;
+
+      :active {
+        background-color: #5e45c6;
+      }
+    }
+
+    .accordion-title {
+      background-color: #430E79;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .accordion-title-right {
+      justify-self: end;
+    }
+
+    .accordion-title {
+      padding: 1rem;
+    }
+
+    .answer_wrapper {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .accordion-open {
+      padding: 1rem;
+      border: 1px solid rgba(101, 101, 101, 0.357);
+      height: auto;
+
+      .job-card-overview {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+
+        .job-card-overview-left {
+          width: 100%;
+          text-align: justify;
+
+          .job-card-stack {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 2rem;
+            gap: 15px;
+          }
+        }
+
+        .job-card-overview-right {
+          height: 3rem;
+          box-sizing: border-box;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 641px) {
+  // ----- BACKGROUNDCARD SCSS -----
+
+  // .background-card-container {
+  //   width: 30vw;
+  //   margin: 3rem 0;
+  //   border: 1px solid white;
+
+  //   .background-card-wrapper {
+  //     .background-card-logo {
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: space-evenly;
+
+  //       .background-card-logo-img {
+  //         width: 5rem;
+  //       }
+  //       .background-card-body-title {
+  //         font-size: 18px;
+  //       }
+  //     }
+
+  //     .background-card-body {
+  //       display: grid;
+  //       grid-template-rows: 1fr 2fr;
+
+  //       .background-card-body-location {
+  //         font-weight: lighter;
+  //         font-size: 20px;
+  //       }
+
+  //       .background-card-right-description {
+  //         .react-icons {
+
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+
+
+     // ----- BACKGROUND ACCORDION CARD SCSS -----
+
+  .background-experience-container {
+    // max-width: 90%;
+    margin: 2rem auto;
+
+    .background-card-wrapper {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 2rem;
+      border: 1px solid #181818;
+      background-color: rgba(48, 48, 48, 0.158);
+      box-shadow: 1px -1px 21px 1px rgba(0, 0, 0, 0.224);
+
+      .background-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+
+        .background-card-logo {
+          width: 5rem;
+        }
+
+        .background-title {
+          background-color: #430E79;
+          padding: 1rem;
+          cursor: pointer;
+        }
+      }
+
+      .background-card-body {
+        padding: 2rem ;
+        display: flex;
+        justify-content: space-between;
+
+        .background-card-body-location {
+
+        }
+        .background-card-description {
+          margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: justify;
+        }
+        .stack-icons {
+          margin-top: 1rem;
+          display: grid;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {}
+
+// ----- END RESPONSIVE -------

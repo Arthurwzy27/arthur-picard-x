@@ -19,7 +19,7 @@ const Banner = () => {
       </video>
       <div className="banner-wrapper">
         <h1 className='banner-title'>
-          <span className='banner-fix-title'>Hey, I'm </span>
+          <span className='banner-fix-title'>Hey, I'm</span>
           <Typewriter
             className={'XXXXX'}
             words={['Arthur', '<Arthur />']}

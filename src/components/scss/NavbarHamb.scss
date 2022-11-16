@@ -1,0 +1,140 @@
+/* sidebar Nav */
+@media (max-width: 640px) {
+  .navBar {
+      width: 100vw;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      background-color: transparent;
+      backdrop-filter: blur(30px);
+      box-shadow: 0px 0px 10px rgba(61, 61, 61, 0.428);
+      z-index: 1;
+
+      .nav-logo {
+        width: 5rem;
+        transform: rotate(-2deg);
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+    }
+
+    .menu-button {
+      padding-right: 1rem;
+      z-index: 10;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+
+    .menuNav {
+      width: 0;
+      height: auto;
+      background: rgba(0, 139, 139, 0.5);
+      position: fixed;
+      top: 3rem;
+      // left: 0;
+      text-align: center;
+      // bottom: 0;
+      overflow: hidden;
+      z-index: 9;
+    }
+
+    .menuNav.showMenu {
+      width: 100%;
+    }
+
+    .navbar-items {
+      backdrop-filter: blur(200px);
+      // background-color: yellow;
+      margin-top: .5rem;
+      // border: .1px solid black;
+      padding: 1rem 0;
+
+      :active {
+        background-color: blue;
+        color: red;
+      }
+    }
+
+    .menuNav li:first-child {
+      // margin-top: 7rem;
+    }
+}
+
+@media (min-width: 641px) {
+  .navBar {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 10px rgba(61, 61, 61, 0.428);
+    z-index: 1;
+    font-family: monospace;
+    font-size: 20px;
+
+    .nav-logo {
+      width: 8rem;
+      transform: rotate(-3deg);
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .nav-contact-icons {
+      font-size: 80;
+      gap: 50;
+      background-color: 'transparent';
+      cursor: "pointer"
+    }
+
+    .menu-button {
+      padding: 1rem 5rem;
+      z-index: 10;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+
+    .menuNav {
+      width: 0;
+      height: auto;
+      // background: rgba(0, 139, 139, 0.5);
+      background:
+        linear-gradient(217deg, rgb(169 93 93 / 80%), rgb(127 22 22 / 0%) 70.71%),
+        linear-gradient(127deg, rgb(87 114 87 / 80%), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(15 15 205 / 80%), rgba(0, 0, 255, 0) 70.71%);
+      position: fixed;
+      top: 3rem;
+      // left: 0;
+      text-align: center;
+      // bottom: 0;
+      overflow: hidden;
+      z-index: 9;
+      cursor: pointer;
+    }
+
+    .menuNav.showMenu {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .navbar-items {
+      backdrop-filter: blur(200px);
+      // background-color: yellow;
+      margin-top: .1rem;
+      // border: .1px solid black;
+      padding: 1rem 0;
+    }
+
+    // .menuNav li:first-child {
+    //   // margin-top: 7rem;
+    // }
+  }
+}
